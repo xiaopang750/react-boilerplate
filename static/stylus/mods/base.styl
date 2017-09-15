@@ -1,0 +1,48 @@
+a
+  color: $linkColor
+  text-decoration: none
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  &:focus
+    outline: 0
+    color: $linkColorHover
+  &:hover
+    outline: 0
+    color: $linkColorHover
+
+ul,ol,li
+  list-style: none;
+
+.clearfix::after
+  content: '.'
+  height: 0
+  overflow: hidden
+  display: block
+  clear: both
+
+.dn
+  display: none
+
+.rel
+  position: relative;
+
+.fl
+  float: left;
+
+.fr
+  float: right;
+
+gradualBackground()
+  background: #0a67b5
+  background: linear-gradient(to bottom, #178cee 0, #0a67b5 50%, #176fba 100%)
+
+itemStyle()
+  background: rgba(256, 256, 256, 0.03)
+  border: 1px solid rgba(255, 255, 255, 0.05)
+  border-radius: 6px
+  color: #979da7
+
+button
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;

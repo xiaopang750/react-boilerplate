@@ -1,0 +1,105 @@
+$color = blue
+
+.listWrap
+  width: 100%;
+
+.listInner
+  width: 670qpx;
+  margin: 0 auto;
+
+.item
+  color: $color;
+  width: 100%;
+  color: #838db2;
+  padding: 22qpx 0;
+  border-bottom: 1px solid #282d3b;
+
+  dt
+    float: left;
+    width: 166qpx;
+    height: 220qpx;
+    margin-right: 26qpx;
+
+    img
+      width: 100%;
+      height: 100%;
+      border-radius: 4qpx;
+
+  dd
+    float: left;
+    width: 465qpx;
+
+  .top
+    margin-bottom: 20qpx;
+
+    .title
+      font-size: 38qpx;
+      color: white;
+      width: 300qpx;
+      white-space: nowrap;
+      overflow: hidden;
+      letter-spacing: -1qpx;
+
+    .play
+      width: 130qpx;
+      height: 50qpx;
+      line-height: 50qpx;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 30qpx;
+      color: rgba(255, 255, 255, 0.9);
+      background-color: #31a673;
+      background-image: -webkit-linear-gradient(135deg, #3185af 0%, #2eac65 100%);
+      border: 1px solid #8ad7d2;
+      border-radius: 6qpx;
+      letter-spacing: -1qpx;
+
+  .mid
+    margin-bottom: 25qpx;
+
+    .ratingText
+      font-size: 44qpx;
+      color: #ff6131;
+      position: absolute;
+      top: -18qpx;
+
+    .starLists
+      margin: 4qpx 16qpx 0 0;
+
+    .douban
+      width: 33qpx;
+      margin-right: 12qpx;
+
+      img
+        width: 100%;
+
+    .star
+      width: 25qpx;
+      height: 25qpx;
+      background-image: url('../assets/star.png');
+      float: left;
+      margin-right: 6qpx;
+
+      &.full
+        background-size: 300% 100%;
+
+      &.empty
+        background-size: 300% 100%;
+        background-position: 100% 0;
+
+      &.half
+        background-size: 300% 100%;
+        background-position: 200% 0;
+
+  .bottom
+    font-size: 25qpx;
+    letter-spacing: -1qpx;
+
+    p
+      white-space: nowrap;
+      overflow: hidden;
+
+    .topInfo
+      margin-bottom: 10qpx;

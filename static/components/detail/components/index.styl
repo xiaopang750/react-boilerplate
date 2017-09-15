@@ -1,0 +1,162 @@
+.detail
+  overflow: hidden;
+  width: 100%;
+
+// TODO 查原因stylus中写blur会报错
+
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 260qpx;
+  overflow: hidden;
+  filter: blur(8px);
+}
+
+.bg img
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+.bg .cover
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+
+.face
+  position: absolute;
+  top: 120qpx;
+  left: 40qpx;
+  z-index: 3;
+  width: 253qpx;
+  height: 373qpx;
+
+  img
+    width: 100%;
+    height: 100%;
+
+.play
+  position: absolute;
+  top: 203qpx;
+  right: 40qpx;
+  z-index: 3;
+  font-size: 28qpx;
+  color: #3eae86;
+
+  .tip,.btn
+    float: left;
+
+  .tip
+    margin: 100qpx 0 0 0;
+
+  .btn
+    display: block;
+    width: 135qpx;
+    height: 135qpx;
+    position: relative;
+
+  .btn
+    img
+      width: 100%;
+
+  :active
+    .shadow
+      display: block;
+
+  .shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 135qpx;
+    height: 135qpx;
+    border-radius: 50%;
+    box-shadow: 10qpx 10qpx 100qpx black;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+  }
+
+.info
+  position: absolute;
+  top: 341qpx;
+  left: 314qpx;
+  color: #949cbb;
+
+  h1
+    color: #fff;
+    font-size: 42qpx;
+
+  h2
+    font-size: 26qpx;
+    width: 400qpx;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 23qpx;
+    margin-bottom: 27qpx;
+
+  .detail
+    font-size: 18qpx;
+    width: 400qpx;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: -1qpx;
+
+.intro
+  margin: 522qpx auto 0 auto;
+  font-size: 30qpx;
+  color: #949cbb;
+  width: 670qpx;
+
+  article
+    width: 100%;
+    text-align: justify;
+
+    span
+      display: inline-block;
+
+  h3
+    font-size: 34qpx;
+    color: #fff;
+    margin-bottom: 30qpx;
+
+.actors
+  margin: 50qpx 0 30qpx 40qpx;
+
+  h3
+    font-size: 34qpx;
+    color: #fff;
+    margin-bottom: 30qpx;
+
+  li {
+    float: left;
+    box-sizing: border-box;
+  }
+
+  .wrap
+    overflow-x: auto;
+
+.actor
+
+  img
+    width: 100%;
+    height: 155qpx;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 18qpx;
+
+  dd
+    color: #949cbb;
+    font-size: 26qpx;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+.spread
+  color: white;
+  margin-left: 5qpx;

@@ -1,0 +1,7 @@
+const COMMON = {
+  ING: 'FETCH_POSTS',
+  SUC: 'FETCH_POSTS_SUCCESS',
+  FAIL: 'FETCH_POSTS_FAIL'
+};
+
+export default COMMON;
